@@ -1,0 +1,35 @@
+[profile.release]
+opt-level = "z"
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+
+[workspace]
+members = [
+    "benchmarks",
+    "eosio",
+    "eosio-abi",
+    "eosio-cdt",
+    "eosio-cdt-macros",
+    "eosio-cdt-macros-internal",
+    "eosio-cdt-sys",
+    # "eosio-cli",
+    "eosio-contracts/eosio-assert",
+    "eosio-contracts/eosio-bios",
+    "eosio-contracts/eosio-forum",
+    "eosio-contracts/eosio-msig",
+    "eosio-contracts/eosio-system",
+    "eosio-contracts/eosio-token",
+    "eosio-contracts/eosio-wrap",
+    "eosio-core",
+    "eosio-core-derive",
+    "eosio-core-macros",
+    "eosio-core-macros-internal",
+    "eosio-rpc",
+    "examples/addressbook",
+    "examples/hello-bare",
+    "examples/hello",
+    "examples/tictactoe",
+]
