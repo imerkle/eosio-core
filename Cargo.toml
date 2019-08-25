@@ -1,3 +1,6 @@
+[package]
+name = "eosio-rust"
+
 [profile.release]
 opt-level = "z"
 debug = false
